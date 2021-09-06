@@ -23,9 +23,14 @@ public String getComplexite() {
 public void setComplexite(String complexite) {
 	this.complexite = complexite;
 }
-@Override
-public String toString() {
-	return "Programmation [compilation=" + compilation + ", type=" + type + ", complexite=" + complexite + "]";
+
+public Programmation() {
+}
+public Programmation(int id, String titre, String domaine, boolean compilation, String type, String complexite) {
+	super(id, titre, domaine);
+	this.compilation = compilation;
+	this.type = type;
+	this.complexite = complexite;
 }
 
 

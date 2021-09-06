@@ -26,6 +26,13 @@ public void setDomaine(String domaine) {
 public String toString() {
 	return "Langage [id=" + id + ", titre=" + titre + ", domaine=" + domaine + "]";
 }
+public Langage(int id, String titre, String domaine) {
+	this.id = id;
+	this.titre = titre;
+	this.domaine = domaine;
+}
+public Langage() {
+}
 
 
 
