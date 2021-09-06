@@ -24,6 +24,11 @@ public void setComplexite(String complexite) {
 	this.complexite = complexite;
 }
 
+@Override
+public String toString() {
+	return "Programmation [compilation=" + compilation + ", type=" + type + ", complexite=" + complexite
+			+ ", toString()=" + super.toString() + "]";
+}
 public Programmation() {
 }
 public Programmation(int id, String titre, String domaine, boolean compilation, String type, String complexite) {
